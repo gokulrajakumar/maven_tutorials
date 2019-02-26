@@ -1,0 +1,19 @@
+# install maven using below command
+      sudo apt-get install maven
+      mvn --version
+# create a new repo in git, specify name, public view, git ignore, license
+# git clone the remote repo
+      git clone <https://github.com/gokulrajakumar/maven_tutorials.git>
+# default directory structure for maven is,
+        src/main/java       ==> for java applications
+        src/main/resources  ==> resources required for the java application
+        src/test/java       ==> for unit testing the applications
+        src/test/resouces   ==> resources required for unit testing the application
+        src/main/webapp     ==> for webapp
+        src/main/groovy     ==> for groovy
+        target              ==> compiled source file is placed here
+# using the POM file,
+      mvn compile ==> this compiles the source code
+      mvn package ==> this packages the java file into a jar file and keeps it under target directory
+      mvn install ==> this moves the jar file into local maven repo under /home/user/.m2/repository/clinic/programming/maven_tutorials/1.0
+      mvn clean   ==> removes the target folder to make it ready for next build
